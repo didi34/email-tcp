@@ -44,7 +44,7 @@ namespace TCP_Test
         private void button3_Click(object sender, EventArgs e)
         {
             string msg = textBox1.Text;
-            sock.Send(Encoding.ASCII.GetBytes(msg + '\n'));
+            sock.Send(Encoding.ASCII.GetBytes(msg + Environment.NewLine));
         }
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
